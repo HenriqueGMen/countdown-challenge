@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Countdown</title>
+</head>
+<body>
+  <img src="assets/top-image.svg" class="img-top" alt="">
+
+  <main>
+    <div class="container">
+      <div class="countdown-container">
+        <h1>Ready to launch in...</h1>
+        <div class="countdown">
+          <div class="time">
+            <span>Dias</span>
+            <p id="days"></p>
+          </div>   
+          <p>:</p>    
+          <div class="time">
+            <span>Horas</span>
+            <p id="hours"></p>
+          </div>
+          <p>:</p>
+          <div class="time">
+            <span>Minutos</span>
+            <p id="minutes"></p>
+          </div>
+          <p>:</p>
+          <div class="time">
+            <span>Segundos</span>
+            <p id="seconds"></p>
+          </div>
+        </div>
+        <p>Inscreva-se para saber mais sobre o lançamento</p>
+        <button class="btn-sub"><span>Inscreva-se</span></button>          
+      </div>
+      <div class="rocket-img">
+        <img src="assets/rocket.svg" alt="">
+      </div>
+    </div>
+
+    <div class="modal-container active">
+      <img src="assets/cancel.png" class="btn-close">
+      <h2>Subscribe for more information</h2>
+      
+      <div class="modal-form">
+        <label for="">Nome:</label>
+        <input type="text" name="" id="name" placeholder="Seu nome">
+        <label for="">Email: </label>
+        <input type="email" name="" id="email" placeholder="Seu email">
+      </div>
+
+      <button class="btn-send">Enviar</button>
+    </div>
+  </main>  
+  <img src="assets/bottom-image.svg" class="img-bottom" alt="">
+
+  <script src="main.js"></script>
+</body>
+</html>

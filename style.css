@@ -1,0 +1,155 @@
+:root {
+  --black: #4D4C59;
+  --purple: #6C63FF;
+	--light-grey: #C8C8C8;
+  --text-color: #9C9AB6;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body{
+  font-family:'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1300px;
+  margin: auto auto;
+  gap: 5rem;
+}
+
+.countdown-container {
+  flex-basis: 55%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;  
+}
+
+.countdown-container h1 {
+  font-size: 2.25rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.23rem;
+  color: var(--purple);
+  margin-bottom: 1.18rem;
+}
+
+.countdown-container p{
+  font-size: 0.87rem;
+  color: var(--text-color);
+  margin-bottom: 1.9rem;
+}
+
+.countdown-container .countdown {
+  display: flex;
+  align-items: flex-end;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.countdown-container .countdown p {
+  font-size: 72px;
+  color: var(--black);
+  margin-bottom: 0;
+}
+
+.countdown-container .countdown .time {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.countdown-container .countdown .time span {
+  color: var(--light-grey);
+}
+
+.countdown-container .countdown .time .text {
+  font-size: 4.5rem;
+  color: var(--black);
+}
+
+.btn-sub, .btn-send {
+  background-color: var(--purple);
+  box-shadow: rgba(0, 0, 0, 0.336) 0px 3px 8px;
+  border: 0;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 160px;
+  height: 46px;
+  transition: all .3s ease-in;
+}
+
+.btn-sub span {
+  font-size: 16px;
+  color: #fff;
+  margin: 10px 32px 16px;
+}
+
+.btn-sub:hover , .btn-send:hover{
+  transform: scale(1.06);
+  background-color: #4d47be;
+}
+
+.modal-container {
+  background-color: #d8d6f8;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 500px;
+  height: 45vh;
+  padding: 20px;
+  display: none;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.336) 0px 3px 8px;
+}
+
+.modal-container h2 {
+  text-align: center;
+  margin: 10px 0 10px;
+}
+
+.modal-container .btn-close {
+  position: absolute;
+  top: 5%;
+  left: 93%;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}
+
+.modal-container .modal-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-container .modal-form input {
+  margin-bottom: 8px;
+  font-size: 18px;
+  padding: 5px;
+  border: 0;
+  border-radius: 3px;
+  outline: 0;
+}
+
+.modal-container .btn-send {
+  margin-top: 20px;
+  color: #fff;
+  font-size: 16px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
+
