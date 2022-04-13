@@ -1,5 +1,9 @@
 #### <h1 align="center"> Countdown </h1>
 
+<p align="center">
+  <img src="assets/to_readme/countdown_gif.gif">
+</p>
+
 
 ## 💻 Projeto
 
